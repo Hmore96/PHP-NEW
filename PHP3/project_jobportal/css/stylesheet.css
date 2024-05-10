@@ -1,0 +1,159 @@
+html * {
+    box-sizing: border-box;
+}
+
+.main-body {
+    font-family: "Lato", sans-serif;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(252, 176, 69, 1) 37%,
+        rgba(227, 235, 141, 1) 89%
+    );
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    color: rgb(20, 0, 67);
+    margin: 0px;
+    padding: 0px;
+}
+
+#logo {
+    width: 30%;
+}
+
+.inner-wrapper {
+    display: flex;
+
+    align-items: center;
+    flex-direction: row;
+    width: 100vw;
+}
+
+nav {
+    width: 100vw;
+    backdrop-filter: blur(
+        50px
+    ); /* Blur-Effekt mit einem Radius von 10 Pixeln */
+    background-color: rgba(255, 255, 255, 0.3);
+    display: flex;
+}
+
+nav {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    text-align: center; /* Center aligning the menu items */
+    margin-right: 0;
+}
+
+nav {
+    display: row; /* Display menu items in a row */
+}
+
+nav a {
+    display: inline-block; /* Display menu items as blocks */
+    padding: 20px; /* Add padding around menu items */
+    color: rgb(20, 0, 67); /* Text color */
+    text-decoration: none; /* Remove default underline */
+}
+
+nav a:hover {
+    background-color: #f4ee9e; /* Darker background color on hover */
+    border: 2px rgb(204, 1, 146);
+    border-radius: 5px;
+    border-style: ridge;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+form {
+    z-index: 0.5;
+}
+
+.anmeldung-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid;
+    max-width: min-content;
+    padding: 20px;
+    z-index: 1;
+}
+
+.uber-uns {
+    padding: 30px 30px 30px;
+}
+
+.blog-wrapper {
+    padding: 30px 30px 30px;
+}
+
+.jobwrapper {
+    border: 1px solid antiquewhite;
+    background-color: antiquewhite;
+    display: flex;
+    flex-wrap: wrap; /* Erlaubt das Umbruch von Elementen */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    width: 100vw;
+    height: auto;
+    gap: 5px; /* Fügt den Abstand zwischen den Kinderelementen hinzu */
+    padding-top: 2px;
+}
+
+.jobwrapper:hover {
+    border: 2px solid purple;
+    padding: 5px;
+}
+
+.job-area {
+    display: flex;
+
+    flex-wrap: wrap;
+}
+
+.gehalt {
+    background-color: aquamarine;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.anstellungsart {
+    background-color: orange;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 5px;
+}
+.kategorie {
+    background-color: plum;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 5px;
+}
+
+.titel {
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: larger;
+    width: fit-content;
+}
+
+.link {
+    margin-bottom: 5px;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 5px;
+}
+.main-h1 {
+    text-align: center;
+}
