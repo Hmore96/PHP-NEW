@@ -4,18 +4,16 @@ html * {
 
 .main-body {
     font-family: "Lato", sans-serif;
-    background: rgb(131, 58, 180);
-    background: linear-gradient(
-        90deg,
-        rgba(131, 58, 180, 1) 0%,
-        rgba(252, 176, 69, 1) 37%,
-        rgba(227, 235, 141, 1) 89%
-    );
+    background-color: #526c85;
+}
+
+main {
+    background-color: rgb(252, 158, 64);
 }
 
 body {
     font-family: "Lato", sans-serif;
-    color: rgb(20, 0, 67);
+    color: rgb(11, 0, 36);
     margin: 0px;
     padding: 0px;
 }
@@ -34,10 +32,6 @@ body {
 
 nav {
     width: 100vw;
-    backdrop-filter: blur(
-        50px
-    ); /* Blur-Effekt mit einem Radius von 10 Pixeln */
-    background-color: rgba(255, 255, 255, 0.3);
     display: flex;
 }
 
@@ -92,48 +86,43 @@ form {
 }
 
 .jobwrapper {
-    border: 1px solid antiquewhite;
-    background-color: antiquewhite;
+    border-radius: 20px;
+    background-color: rgb(229, 229, 229);
     display: flex;
     flex-wrap: wrap; /* Erlaubt das Umbruch von Elementen */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 2px;
-    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    gap: 10px;
     height: auto;
-    gap: 5px; /* Fügt den Abstand zwischen den Kinderelementen hinzu */
-    padding-top: 2px;
-}
-
-.jobwrapper:hover {
-    border: 2px solid purple;
-    padding: 5px;
 }
 
 .job-area {
     display: flex;
-
     flex-wrap: wrap;
+    gap: 10px;
 }
 
 .gehalt {
     background-color: aquamarine;
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 15px;
+    padding: 8px;
 }
 
 .anstellungsart {
     background-color: orange;
-    border-radius: 5px;
+    border-radius: 15px;
     width: fit-content;
-    padding: 5px;
+    padding: 8px;
 }
 .kategorie {
     background-color: plum;
-    border-radius: 5px;
+    border-radius: 15px;
     width: fit-content;
-    padding: 5px;
+    padding: 8px;
 }
 
 .titel {

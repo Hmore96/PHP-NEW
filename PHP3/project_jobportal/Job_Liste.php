@@ -5,6 +5,12 @@ ist_eingeloggt();
 use Markus\project_jobportal\Jobs;
 include "kopf.php";
 
+?>
+
+<main>
+
+<?php
+
 echo "<h1 class='main-h1'>Aktuelle Job Inserate</h1>";
 
     $jobs = new Jobs();
@@ -33,4 +39,7 @@ echo "</div>";
 
 
 
+
 include "fuss.php";
+?>
+</main>
