@@ -17,4 +17,16 @@ class Jobs
         }
         return $alle_jobs;
     }
+    public function benutzer_jobs(): array
+    {
+        $alle_jobs = array();
+        $db =  Mysql::getInstanz();
+        $benutzer_id = $_SESSION["benutzer_id"];
+        $ergebnis = $db->query(("SELECT * FROM job_attribute WHERE id_zu_benutzer = $benutzer_id"));
+        while ($row = $ergebnis->fetch_assoc()) {
+            $alle_jobs[] = new Job($row);
+        }
+        return $alle_jobs;
+    }
+
 }

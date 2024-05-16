@@ -1,11 +1,11 @@
 <?php
+namespace Markus\project_jobportal;
+
 include "setup.php";
 include "kopf.php";
 
 use Markus\project_jobportal\Validieren;
 use Markus\project_jobportal\Mysql;
-
-
 //wurde das Formular abgeschickt?
 //print_r($_POST);
 if (! empty($_POST)){
@@ -30,10 +30,8 @@ if (! empty($_POST)){
             $_SESSION["benutzername"] = $benutzer["benutzername"];
             $_SESSION["benutzer_id"] = $benutzer["id"];
 
-            // Umleitung zum Admin-System
-            header("Location: index.php");
+            header("Location: admin_dashboard.php");
             exit;
-
         }
             
         

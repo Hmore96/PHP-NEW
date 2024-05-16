@@ -1,8 +1,4 @@
 <?php 
-include "setup.php";
-ist_eingeloggt();
-
-use Markus\project_jobportal\Jobs;
 include "kopf.php";
 
 ?>

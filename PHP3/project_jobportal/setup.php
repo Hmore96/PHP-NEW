@@ -8,17 +8,18 @@ const MYSQL_DATENBANK = "projekt_jwe";
 
 // Setup-Code: Nur verändern wenn du weißt, was du tust.
 
-
-
-session_start();
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
 
 function ist_eingeloggt() {
     if (empty($_SESSION["eingeloggt"])) {
         // Benutzer nicht eingeloggt -> Umleiten zum Login
         header("Location: login.php");
         exit;
-    }
+    } 
 }
+
 
 spl_autoload_register(
     function (string $klasse) {

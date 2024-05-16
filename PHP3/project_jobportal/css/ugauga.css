@@ -24,9 +24,9 @@ body {
 
 .inner-wrapper {
     display: flex;
-
+    flex-wrap: wrap;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     width: 100vw;
 }
 
@@ -97,13 +97,14 @@ form {
     margin-right: auto;
     width: 90vw;
     gap: 10px;
-    height: auto;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .job-area {
+    width: 100vw;
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
 }
 
 .gehalt {
@@ -127,7 +128,7 @@ form {
 
 .titel {
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 20px;
     font-size: larger;
     width: fit-content;
 }
@@ -145,4 +146,29 @@ form {
 }
 .main-h1 {
     text-align: center;
+}
+
+.delete {
+    border: 2px solid white;
+    background-color: rgb(173, 27, 70);
+    border-radius: 25px;
+    padding: 10px;
+    width: 200px;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+}
+
+.bearbeiten {
+    border: 2px solid rgb(255, 0, 0);
+    background-color: rgb(200, 244, 57);
+    border-radius: 25px;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.delete:hover {
+    transform: scale(1.2);
+}
+.bearbeiten:hover {
+    transform: scale(1.2);
 }

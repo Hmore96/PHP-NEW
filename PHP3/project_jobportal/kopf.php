@@ -14,17 +14,12 @@
     <header>
         <div class="inner-wrapper">
             <div class="navigation">
-                     <a href="index.html">
-                        <img  id="logo" src="logo2.png" alt="Logo" />
-                    </a>
-            </div>
-            <div>
                 <nav>
                         <a href="Job_Liste.php">Jobs</a>
                         <a href="über_uns.php">Über uns</a>
                         <a href="blog.php ">Blog</a>
-                        <a href="login.php">Login</a>
-                        <a href="#">Logout</a>
+                        <a href="admin_dashboard.php">Kundenbereich</a>
+                        <a href="logout.php">Logout</a>
                 </nav>
             </div>
         </div>
