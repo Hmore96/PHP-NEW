@@ -11,7 +11,7 @@
  <body>
     <div class="button-wrapper">
     <div class="button-wrapper">
-        <button type="button" class="button1" onclick="window.location='admin.php'">Inserate verwalten</button>
+        <button type="button" class="button1" onclick="window.location='jobs_bearbeiten.php'">Inserate verwalten</button>
         <button type="button" class="button2" onclick="window.location='admin.php'">Neues Inserat aufgeben</button>
     </div>
 

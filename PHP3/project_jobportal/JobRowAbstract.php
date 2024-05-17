@@ -33,7 +33,7 @@ use Markus\project_jobportal\Mysql;
 
     public function entfernen(): void {
         $db = Mysql::getInstanz();
-        $sql_id = $db->escape($this->id);
+        $sql_id = $db->escape($this->job_id);
         $db->query("DELETE FROM {$this->tabelle} WHERE job_id = '{$sql_id}'");
     }
 

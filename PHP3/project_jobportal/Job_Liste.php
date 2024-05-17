@@ -13,7 +13,7 @@ include "kopf.php";
 
 echo "<h1 class='main-h1'>Aktuelle Job Inserate</h1>";
 
-    $jobs = new Jobs();
+    $jobs = new Job();
     $alle_jobs = $jobs->alle_jobs(); // gibt "Job-Objekte als Array zurückt
 
 echo "<div class='job-area'>";

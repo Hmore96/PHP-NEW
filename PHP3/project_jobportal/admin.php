@@ -36,7 +36,7 @@ echo "<div class='job-area'>";
         echo "</div>";
         echo "<div class='button-area'>";
         echo "<br>";
-        echo "<button class='bearbeiten' onclick='window.location=\"jobs_bearbeiten.php\"'>Bearbeiten</button>";
+        echo "<a href='jobs_bearbeiten.php?id={$job->job_id}'>Bearbeiten</a>" . "</td>";;
         echo "<br>";
         echo "</div>";
         echo "<div class='button-area'>";

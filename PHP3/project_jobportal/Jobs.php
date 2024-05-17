@@ -5,7 +5,7 @@ namespace Markus\project_jobportal;
 use Markus\project_jobportal\Job;
 use Markus\project_jobportal\Mysql;
 
-class Jobs
+class Jobs extends JobRowAbstract
 {
     public function alle_jobs(): array
     {
